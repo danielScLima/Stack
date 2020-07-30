@@ -6,7 +6,7 @@
 
 TEST_CASE( "Testing the insert call in the stack", "[single-file]" )
 {
-	Stack s;
+	StackDataStructure s;
 
 	REQUIRE( s.topNode() == nullptr );
 	s.insertNode("home");
@@ -21,7 +21,7 @@ TEST_CASE( "Testing the insert call in the stack", "[single-file]" )
 
 TEST_CASE( "Testing the leak ocurence", "[single-file]" )
 {
-	Stack s;
+	StackDataStructure s;
 
 	REQUIRE( s.topNode() == nullptr );
 	s.insertNode("home");
@@ -31,7 +31,7 @@ TEST_CASE( "Testing the insert and remove calls in the stack", "[single-file]" )
 {
     SECTION( "Inserting" )
 	{
-		Stack s;
+		StackDataStructure s;
 		s.insertNode("home");
         s.insertNode("cat");
 		NodeOfStack* node = s.topNode();
@@ -52,7 +52,7 @@ SCENARIO( "Teste the insert in the stack", "[single-file]" )
 {
     GIVEN( "A stack with 3 elements" )
 	{
-        Stack s;
+        StackDataStructure s;
 		s.insertNode("home");
 		s.insertNode("cat");
 		s.insertNode("roof");
@@ -81,7 +81,7 @@ SCENARIO( "Teste the insert and delete in the stack", "[single-file]" )
 {
     GIVEN( "A stack " )
 	{
-        Stack s;
+        StackDataStructure s;
 
         WHEN( "5 nodes are inserted" )
 		{
