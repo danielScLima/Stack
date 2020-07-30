@@ -1,7 +1,7 @@
 #include "stack.h"
 #include <stdlib.h>
 
-Stack::~Stack()
+StackDataStructure::~StackDataStructure()
 {
     NodeOfStack* initialHead = head;
     if (initialHead != nullptr)
@@ -17,7 +17,7 @@ Stack::~Stack()
     }
 }
 
-NodeOfStack* Stack::insertNode(const std::string& data)
+NodeOfStack* StackDataStructure::insertNode(const std::string& data)
 {
     struct NodeOfStack* tmp = new NodeOfStack(data);
     if (tmp == nullptr)
@@ -37,7 +37,7 @@ NodeOfStack* Stack::insertNode(const std::string& data)
     return tmp;
 }
 
-NodeOfStack *Stack::removeNode()
+NodeOfStack *StackDataStructure::removeNode()
 {
     if (head == nullptr)
     {
@@ -52,12 +52,12 @@ NodeOfStack *Stack::removeNode()
     }
 }
 
-NodeOfStack *Stack::topNode()
+NodeOfStack *StackDataStructure::topNode()
 {
     return head;
 }
 
-std::vector<std::string> Stack::getElementsAsVector()
+std::vector<std::string> StackDataStructure::getElementsAsVector()
 {
     std::vector<std::string> vec;
     NodeOfStack* tmp = head;

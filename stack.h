@@ -32,17 +32,17 @@ struct NodeOfStack
 };
 
 /*!
- * \brief The Stack class
+ * \brief The StackDataStructure class
  */
-class Stack
+class StackDataStructure
 {
 public:
     /*!
-     * \brief Stack
+     * \brief StackDataStructure
      */
-    Stack(){}
+    StackDataStructure(){}
     
-    ~Stack();
+    ~StackDataStructure();
     /*!
      * \brief insertNode
      * \param data
