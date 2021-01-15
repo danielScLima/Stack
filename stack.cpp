@@ -1,5 +1,6 @@
 #include "stack.h"
 #include <stdlib.h>
+#include <stdexcept>
 
 StackDataStructure::~StackDataStructure()
 {
