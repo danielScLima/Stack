@@ -1,5 +1,7 @@
 Stack
 ====================
+Building with AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/f6qjttmvkhu7llvj?svg=true)](https://ci.appveyor.com/project/DanielSLima/stack)
+
 Building with Travis: [![Build Status](https://www.travis-ci.com/danielScLima/Stack.svg?branch=master)](https://www.travis-ci.com/danielScLima/Stack)
 
 This repository has a project with the implementation of a Stack.
